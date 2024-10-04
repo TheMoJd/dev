@@ -3,6 +3,8 @@
 import type { NextPage } from 'next';
 import { useQuery } from '@apollo/client';
 import { GET_BOOKS } from '../queries';
+import WeatherPage from './weather';
+import TrafficPage from './traffic';
 
 const Home: NextPage = () => {
   const { loading, error, data } = useQuery(GET_BOOKS);
@@ -13,6 +15,7 @@ const Home: NextPage = () => {
   return (
     <div>
       <h1>Book Library</h1>
+      <TrafficPage></TrafficPage>
       <ul>
         {data.getBooks.map((book: any) => (
           <li key={book._id}>

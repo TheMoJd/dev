@@ -1,0 +1,44 @@
+/* src/styles/Weather.module.css */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f8ff;
+  }
+  
+  .weatherCard {
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cityName {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .temperature {
+    font-size: 48px;
+    margin-bottom: 10px;
+    color: #007acc;
+  }
+  
+  .conditionContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  
+  .condition {
+    font-size: 20px;
+    margin-left: 10px;
+  }
+  
+  .details {
+    margin-top: 10px;
+  }
+  
